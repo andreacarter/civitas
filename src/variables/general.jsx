@@ -2,25 +2,24 @@
 // // // Tasks for TasksCard - see Dashboard view
 // #############################
 
-var bugs = [
-  'Sign contract for "What are conference organizers afraid of?"',
-  "Lines From Great Russian Literature? Or E-mails From My Boss?",
-  "Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit",
-  "Create 4 Invisible User Experiences you Never Knew About"
+var tasks = [
+  "Register for National Interagency Community Reinvestment Conference",
+  "Review most recent peer CRA exams",
+  "Complete demographic analysis of August lending data",
+  "Request updated service hours"
 ];
-var website = [
-  "Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit",
-  'Sign contract for "What are conference organizers afraid of?"'
+var events = [
+  "Sponsorship dinner with Junior Achievement - October 12",
+  "Ruby's Place Gala - October 27 "
 ];
-var server = [
-  "Lines From Great Russian Literature? Or E-mails From My Boss?",
-  "Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit",
-  'Sign contract for "What are conference organizers afraid of?"'
+var contact = [
+  "Message received from Wendy at ECHO Housing",
+  "Message received from Carla at Community Housing Network"
 ];
 
 module.exports = {
   // these 3 are used to create the tasks lists in TasksCard - Dashboard view
-  bugs,
-  website,
-  server
+  tasks,
+  events,
+  contact
 };
