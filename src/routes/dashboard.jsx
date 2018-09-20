@@ -59,13 +59,6 @@ const dashboardRoutes = [
     icon: MapOutlined,
     component: Maps
   },
-  {
-    path: "/notifications",
-    sidebarName: "Notifications",
-    navbarName: "Notifications",
-    icon: Notifications,
-    component: NotificationsPage
-  },
   { redirect: true, path: "/", to: "/dashboard", navbarName: "Redirect" }
 ];
 

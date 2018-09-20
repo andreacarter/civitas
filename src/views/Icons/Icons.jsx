@@ -19,17 +19,10 @@ function Icons(props) {
       <GridItem xs={12} sm={12} md={12}>
         <Card plain>
           <CardHeader plain color="primary">
-            <h4 className={classes.cardTitleWhite}>Material Design Icons</h4>
+            <h4 className={classes.cardTitleWhite}>2018 Investment Goal</h4>
             <p className={classes.cardCategoryWhite}>
-              Handcrafted by our friends from{" "}
-              <a
-                href="https://design.google.com/icons/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Google
-              </a>
-            </p>
+              $2,000,000
+               </p>
           </CardHeader>
           <CardBody>
             <Hidden only={["sm", "xs"]}>

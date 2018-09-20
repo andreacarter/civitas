@@ -54,104 +54,50 @@ function TypographyPage(props) {
   return (
     <Card>
       <CardHeader color="primary">
-        <h4 className={classes.cardTitleWhite}>Material Dashboard Heading</h4>
-        <p className={classes.cardCategoryWhite}>
-          Created using Roboto Font Family
-        </p>
+        <h4 className={classes.cardTitleWhite}>Branch 1</h4>
       </CardHeader>
       <CardBody>
         <div className={classes.typo}>
-          <div className={classes.note}>Header 1</div>
-          <h1>The Life of Material Dashboard</h1>
+          <div className={classes.note}>Downtown Orlando</div>
+          <h5>Central Avenue Branch</h5>
         </div>
         <div className={classes.typo}>
-          <div className={classes.note}>Header 2</div>
-          <h2>The Life of Material Dashboard</h2>
-        </div>
-        <div className={classes.typo}>
-          <div className={classes.note}>Header 3</div>
-          <h3>The Life of Material Dashboard</h3>
-        </div>
-        <div className={classes.typo}>
-          <div className={classes.note}>Header 4</div>
-          <h4>The Life of Material Dashboard</h4>
-        </div>
-        <div className={classes.typo}>
-          <div className={classes.note}>Header 5</div>
-          <h5>The Life of Material Dashboard</h5>
-        </div>
-        <div className={classes.typo}>
-          <div className={classes.note}>Header 6</div>
-          <h6>The Life of Material Dashboard</h6>
-        </div>
-        <div className={classes.typo}>
-          <div className={classes.note}>Paragraph</div>
+          <div className={classes.note}>Address</div>
           <p>
-            I will be the leader of a company that ends up being worth billions
-            of dollars, because I got the answers. I understand culture. I am
-            the nucleus. I think that’s a responsibility that I have, to push
-            possibilities, to show people, this is the level that things could
-            be at.
+          400 E Central Blvd, Orlando, FL 32801
           </p>
         </div>
         <div className={classes.typo}>
-          <div className={classes.note}>Quote</div>
-          <Quote
-            text="I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at."
-            author=" Kanye West, Musician"
-          />
-        </div>
-        <div className={classes.typo}>
-          <div className={classes.note}>Muted Text</div>
+          <div className={classes.note}>Branch Services</div>
           <Muted>
-            I will be the leader of a company that ends up being worth billions
-            of dollars, because I got the answers...
+            Full Service, with ATM
           </Muted>
-        </div>
-        <div className={classes.typo}>
-          <div className={classes.note}>Primary Text</div>
-          <Primary>
-            I will be the leader of a company that ends up being worth billions
-            of dollars, because I got the answers...
-          </Primary>
-        </div>
-        <div className={classes.typo}>
-          <div className={classes.note}>Info Text</div>
-          <Info>
-            I will be the leader of a company that ends up being worth billions
-            of dollars, because I got the answers...
-          </Info>
-        </div>
-        <div className={classes.typo}>
-          <div className={classes.note}>Success Text</div>
-          <Success>
-            I will be the leader of a company that ends up being worth billions
-            of dollars, because I got the answers...
-          </Success>
-        </div>
-        <div className={classes.typo}>
-          <div className={classes.note}>Warning Text</div>
-          <Warning>
-            I will be the leader of a company that ends up being worth billions
-            of dollars, because I got the answers...
-          </Warning>
-        </div>
-        <div className={classes.typo}>
-          <div className={classes.note}>Danger Text</div>
-          <Danger>
-            I will be the leader of a company that ends up being worth billions
-            of dollars, because I got the answers...
-          </Danger>
-        </div>
-        <div className={classes.typo}>
-          <div className={classes.note}>Small Tag</div>
-          <h2>
-            Header with small subtitle<br />
-            <small>Use "Small" tag for the headers</small>
-          </h2>
         </div>
       </CardBody>
     </Card>
+        <Card>
+        <CardHeader color="primary">
+          <h4 className={classes.cardTitleWhite}>Branch 2</h4>
+        </CardHeader>
+        <CardBody>
+          <div className={classes.typo}>
+            <div className={classes.note}>Southwest Orlando</div>
+            <h5>Central Avenue Branch</h5>
+          </div>
+          <div className={classes.typo}>
+            <div className={classes.note}>Address</div>
+            <p>
+            10900 Orangewood Blvd, Orlando, FL 32821
+            </p>
+          </div>
+          <div className={classes.typo}>
+            <div className={classes.note}>Branch Services</div>
+            <Muted>
+              Full Service, with ATM
+            </Muted>
+          </div>
+        </CardBody>
+      </Card>
   );
 }
 
