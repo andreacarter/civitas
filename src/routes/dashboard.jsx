@@ -5,15 +5,15 @@ import Person from "@material-ui/icons/Person";
 import MapOutlined from "@material-ui/icons/MapOutlined";
 import BubbleChart from "@material-ui/icons/BubbleChart";
 import LocationOn from "@material-ui/icons/LocationOn";
-import Notifications from "@material-ui/icons/Notifications";
+
 // core components/views
 import DashboardPage from "views/Dashboard/Dashboard.jsx";
-import UserProfile from "views/UserProfile/UserProfile.jsx";
-import TableList from "views/TableList/TableList.jsx";
-import Typography from "views/Typography/Typography.jsx";
-import Icons from "views/Icons/Icons.jsx";
+import BankProfile from "views/BankProfile/BankProfile.jsx";
+import OrgList from "views/OrgList/OrgList.jsx";
+import Branches from "views/Branches/Branches.jsx";
+import Goals from "views/Goals/Goals.jsx";
 import Maps from "views/Maps/Maps.jsx";
-import NotificationsPage from "views/Notifications/Notifications.jsx";
+
 
 
 const dashboardRoutes = [
@@ -25,32 +25,32 @@ const dashboardRoutes = [
     component: DashboardPage
   },
   {
-    path: "/user",
+    path: "/profile",
     sidebarName: "Bank Profile",
     navbarName: "Bank Profile",
     icon: Person,
-    component: UserProfile
+    component: BankProfile
   },
   {
-    path: "/table",
+    path: "/localorgs",
     sidebarName: "Local Organizations",
     navbarName: "Local Organizations",
     icon: "content_paste",
-    component: TableList
+    component: OrgList
   },
   {
-    path: "/typography",
+    path: "/branches",
     sidebarName: "Branch Locations",
     navbarName: "Branch Locations",
     icon: LocationOn,
-    component: Typography
+    component: Branches
   },
   {
-    path: "/icons",
+    path: "/goals",
     sidebarName: "Goals",
     navbarName: "Goals",
     icon: BubbleChart,
-    component: Icons
+    component: Goals
   },
   {
     path: "/maps",
