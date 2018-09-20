@@ -14,8 +14,6 @@ import Branches from "views/Branches/Branches.jsx";
 import Goals from "views/Goals/Goals.jsx";
 import Maps from "views/Maps/Maps.jsx";
 
-
-
 const dashboardRoutes = [
   {
     path: "/dashboard",
