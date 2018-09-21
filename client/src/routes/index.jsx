@@ -1,10 +1,5 @@
-import Landing from "views/LandingPage/Landing.html";
+import Dashboard from "layouts/Dashboard/Dashboard.jsx";
 
-const indexRoutes = [
-    {
-    path: "/",
-    component: Landing
-}
-];
+const indexRoutes = [{ path: "/", component: Dashboard }];
 
 export default indexRoutes;
