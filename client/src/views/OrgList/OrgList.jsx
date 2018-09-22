@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 // core components
@@ -8,6 +9,7 @@ import Table from "components/Table/Table.jsx";
 import Card from "components/Card/Card.jsx";
 import CardHeader from "components/Card/CardHeader.jsx";
 import CardBody from "components/Card/CardBody.jsx";
+import OrgProfiles from "./OrgProfiles";
 
 const styles = {
   cardCategoryWhite: {
@@ -51,19 +53,18 @@ function TableList(props) {
           <CardBody>
             <Table
               tableHeaderColor="primary"
-              tableHead={["Organization", "Contact Name", "Address"]}
+              tableHead={["Organization", "Contact Name", "Address", ""]}
               tableData={[
-                ["Org1", "Contact1", "Address1"],
-                ["Org2", "Contact2", "Address2"],
-                ["Org3", "Contact3", "Address3"],
-                ["Org4", "Contact4", "Address4"],
-                ["Org5", "Contact5", "Address5"]
+                ["Org1", "Contact1", "Address1", ""],
+                ["Org2", "Contact2", "Address2", ""],
+                ["Org3", "Contact3", "Address3", ""],
+                ["Org4", "Contact4", "Address4", ""],
+                ["Org5", "Contact5", "Address5", ""]
               ]}
             />
           </CardBody>
         </Card>
       </GridItem>
-
     </GridContainer>
   );
 }
