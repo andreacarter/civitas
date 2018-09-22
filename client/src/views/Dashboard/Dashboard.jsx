@@ -59,7 +59,9 @@ class Dashboard extends React.Component {
                 />
               </CardHeader>
               <CardBody>
-                <h4 className={classes.cardTitle}>Low and Moderate Income Lending</h4>
+                <h4 className={classes.cardTitle}>
+                  Low and Moderate Income Lending
+                </h4>
                 <p className={classes.cardCategory}>
                   <span className={classes.successText}>
                     <ArrowUpward className={classes.upArrowCardCategory} /> 55%
@@ -169,20 +171,22 @@ class Dashboard extends React.Component {
           <GridItem xs={12} sm={12} md={6}>
             <Card>
               <CardHeader color="warning">
-                <h4 className={classes.cardTitleWhite}>Top Employee Volunteers</h4>
-                <p className={classes.cardCategoryWhite}>
-                  Updated 2 days ago
-                </p>
+                <h4 className={classes.cardTitleWhite}>
+                  Top Employee Volunteers
+                </h4>
+                <p className={classes.cardCategoryWhite}>Updated 2 days ago</p>
               </CardHeader>
               <CardBody>
                 <Table
                   tableHeaderColor="warning"
-                  tableHead={["Rank", "Department", "Name", "Total Hours"]}
+                  tableHead={["Rank", "Name", "Department", "Total Hours"]}
                   tableData={[
-                    ["1", "Accounting", "Dakota Rice", "27"],
-                    ["2", "Legal", "Minerva Hooper", "24"],
-                    ["3", "Underwriting", "Sage Rodriguez", "19"],
-                    ["4", "Underwriting", "Philip Chaney", "13"]
+                    [
+                      "bank._id",
+                      "bank.employee",
+                      "bank.department",
+                      "bank.servicehours"
+                    ]
                   ]}
                 />
               </CardBody>

@@ -9,7 +9,6 @@ import Card from "components/Card/Card.jsx";
 import CardHeader from "components/Card/CardHeader.jsx";
 import CardBody from "components/Card/CardBody.jsx";
 
-
 const style = {
   typo: {
     paddingLeft: "25%",
@@ -59,19 +58,15 @@ function TypographyPage(props) {
             <CardBody>
               <div className={classes.typo}>
                 <div className={classes.note}>Branch Name</div>
-                <h5>Central Avenue Branch</h5>
+                <h5>Central Avenue</h5>
               </div>
               <div className={classes.typo}>
                 <div className={classes.note}>Address</div>
-                <p>
-                  400 E Central Blvd, Orlando, FL 32801
-          </p>
+                <p>400 E Central Blvd, Orlando, FL 32801</p>
               </div>
               <div className={classes.typo}>
                 <div className={classes.note}>Branch Services</div>
-                <Muted>
-                  Full Service, with ATM
-          </Muted>
+                <Muted>Full Service, with ATM</Muted>
               </div>
             </CardBody>
           </Card>
@@ -86,19 +81,15 @@ function TypographyPage(props) {
             <CardBody>
               <div className={classes.typo}>
                 <div className={classes.note}>Branch Name</div>
-                <h5>Central Avenue Branch</h5>
+                <h5>Southwest Orlando</h5>
               </div>
               <div className={classes.typo}>
                 <div className={classes.note}>Address</div>
-                <p>
-                  10900 Orangewood Blvd, Orlando, FL 32821
-            </p>
+                <p>10900 Orangewood Blvd, Orlando, FL 32821</p>
               </div>
               <div className={classes.typo}>
                 <div className={classes.note}>Branch Services</div>
-                <Muted>
-                  Full Service, with ATM
-            </Muted>
+                <Muted>Full Service, with ATM</Muted>
               </div>
             </CardBody>
           </Card>

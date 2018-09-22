@@ -57,7 +57,7 @@ const dashboardRoutes = [
     icon: MapOutlined,
     component: Maps
   },
-  { redirect: true, path: "/", to: "/dashboard", navbarName: "Redirect" }
+  { redirect: true, path: "/", to: "/dashboard" }
 ];
 
 export default dashboardRoutes;
