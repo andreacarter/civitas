@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const bankSchema = new Schema({
+const hoursSchema = new Schema({
   employee: { type: String, required: true },
   department: { type: String, required: true },
   eventtype: { type: String, required: true },
@@ -9,6 +9,6 @@ const bankSchema = new Schema({
   date: { type: Date, default: Date.now }
 });
 
-const Bank = mongoose.model("Bank", bankSchema);
+const Hours = mongoose.model("Hours", hoursSchema);
 
-module.exports = Bank;
+module.exports = Hours;

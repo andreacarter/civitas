@@ -1,3 +1,3 @@
 module.exports = {
-  Bank: require("./bank")
+  Hours: require("./hours")
 };

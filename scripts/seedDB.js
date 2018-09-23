@@ -5,10 +5,10 @@ const db = require("../models");
 
 mongoose.connect(
   process.env.MONGODB_URI ||
-  "mongodb://localhost/bankuserdb"
+  "mongodb://localhost/servicehours"
 );
 
-const bankSeed = [
+const hoursSeed = [
   {
     employee: "John Smith",
     department: "Accounting",
@@ -40,9 +40,9 @@ const bankSeed = [
 
 ];
 
-db.Bank
+db.Hours
   .remove({})
-  .then(() => db.Bank.collection.insertMany(bankSeed))
+  .then(() => db.Hours.collection.insertMany(hoursSeed))
   .then(data => {
     console.log(data.result.n + " records inserted!");
     process.exit(0);

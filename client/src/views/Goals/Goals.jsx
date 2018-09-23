@@ -11,10 +11,10 @@ import CardBody from "components/Card/CardBody.jsx";
 import Modal from "components/Modal/Modal.jsx";
 import CardFooter from "components/Card/CardFooter.jsx";
 import iconsStyle from "assets/jss/material-dashboard-react/views/iconsStyle.jsx";
-import Table from "components/Table/Table.jsx";
 import CustomLinearProgress from "components/CustomLinearProgress/CustomLinearProgress.jsx";
+import ResultsTable from "./ResultsTable";
 
-function Icons(props) {
+function Goals(props) {
   const { classes } = props;
   return (
     <div>
@@ -24,15 +24,17 @@ function Icons(props) {
             <CardHeader plain color="primary">
               <h4 className={classes.cardTitleWhite}>2018 Investment Goal</h4>
               <p className={classes.cardCategoryWhite}>$2,000,000</p>
-              </CardHeader>
-              <CardBody>
-              <p className={classes.cardCategoryPrimary}>Current Progress: 65% of Goal</p>
+            </CardHeader>
+            <CardBody>
+              <p className={classes.cardCategoryPrimary}>
+                Current Progress: 65% of Goal
+              </p>
               <CustomLinearProgress
                 variant="determinate"
                 color="primary"
                 value={65}
               />
-              </CardBody>
+            </CardBody>
           </Card>
         </GridItem>
 
@@ -43,13 +45,15 @@ function Icons(props) {
               <p className={classes.cardCategoryWhite}>150 Hours</p>
             </CardHeader>
             <CardBody>
-              <p className={classes.cardCategoryPrimary}>Current Progress: 45% of Goal</p>
+              <p className={classes.cardCategoryPrimary}>
+                Current Progress: 45% of Goal
+              </p>
               <CustomLinearProgress
                 variant="determinate"
                 color="primary"
                 value={45}
               />
-              </CardBody>
+            </CardBody>
           </Card>
         </GridItem>
       </GridContainer>
@@ -62,23 +66,7 @@ function Icons(props) {
               </h4>
             </CardHeader>
             <CardBody>
-              <Table
-                tableHeaderColor="primary"
-                tableHead={[
-                  "Employee Name",
-                  "Department",
-                  "Service Completed",
-                  "Total Hours"
-                ]}
-                tableData={[
-                  [
-                    "bank.employee",
-                    "bank.department",
-                    "bank.eventtype",
-                    "bank.servicehours"
-                  ]
-                ]}
-              />
+              <ResultsTable />
             </CardBody>
             <CardFooter>
               <Modal />
@@ -90,8 +78,8 @@ function Icons(props) {
   );
 }
 
-Icons.propTypes = {
+Goals.propTypes = {
   classes: PropTypes.object.isRequired
 };
 
-export default withStyles(iconsStyle)(Icons);
+export default withStyles(iconsStyle)(Goals);
