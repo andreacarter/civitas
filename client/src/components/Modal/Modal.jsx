@@ -1,4 +1,5 @@
 import React from "react";
+import API from "../../utils/API";
 // material-ui components
 import withStyles from "@material-ui/core/styles/withStyles";
 import Slide from "@material-ui/core/Slide";
@@ -36,6 +37,23 @@ class Modal extends React.Component {
     x[modal] = false;
     this.setState(x);
   }
+  handleInputChange = event => {
+    const { name, value } = event.target;
+    this.setState({
+      [name]: value
+    });
+  };
+
+  handleFormSubmit = event => {
+    event.preventDefault();
+
+    API.saveHours({
+      employee: this.state.employee,
+      department: this.state.department,
+      eventtype: this.state.eventtype,
+      hourscompleted: this.state.hourscompleted
+    }).then(res => this.loadData());
+  };
   render() {
     const { classes } = this.props;
     return (
@@ -83,29 +101,37 @@ class Modal extends React.Component {
           >
             <TextField
               autoFocus
+              value={this.state.employee}
+              onChange={this.handleInputChange}
               margin="dense"
-              id="name"
+              name="employee"
               label="Employee Name"
               type="input"
               fullWidth
             />
             <TextField
+              value={this.state.department}
+              onChange={this.handleInputChange}
               margin="dense"
-              id="department"
+              name="department"
               label="Department"
               type="input"
               fullWidth
             />
             <TextField
+              value={this.state.eventtype}
+              onChange={this.handleInputChange}
               margin="dense"
-              id="event"
+              name="eventtype"
               label="Service Completed"
               type="input"
               fullWidth
             />
             <TextField
+              value={this.state.hourscompleted}
+              onChange={this.handleInputChange}
               margin="dense"
-              id="hours"
+              name="hourscompleted"
               label="Service Hours"
               type="input"
               fullWidth
@@ -114,10 +140,7 @@ class Modal extends React.Component {
           <DialogActions
             className={classes.modalFooter + " " + classes.modalFooterCenter}
           >
-            <Button
-              onClick={() => this.handleClose("modal")}
-              color="successNoBackground"
-            >
+            <Button onClick={this.handleFormSubmit} color="success">
               Submit
             </Button>
           </DialogActions>

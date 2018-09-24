@@ -13,28 +13,28 @@ const hoursSeed = [
     employee: "John Smith",
     department: "Accounting",
     eventtype: "Tax Preparation",
-    servicehours: 6,
+    hourscompleted: 6,
     date: new Date(Date.now())
   },
   {
     employee: "James Bond",
     department: "Branch Services",
     eventtype: "Adult Financial Education",
-    servicehours: 9,
+    hourscompleted: 9,
     date: new Date(Date.now())
   },
   {
     employee: "Jane Doe",
     department: "Legal and Compliance",
     eventtype: "Youth Financial Education",
-    servicehours: 4,
+    hourscompleted: 4,
     date: new Date(Date.now())
   },
   {
     employee: "Jenny Williams",
     department: "Underwriting",
     eventtype: "Affordable Housing Loan Committee",
-    servicehours: 6,
+    hourscompleted: 6,
     date: new Date(Date.now())
   },
 
