@@ -52,13 +52,14 @@ function TableList(props) {
           <CardBody>
             <Table
               tableHeaderColor="primary"
-              tableHead={["Organization", "Contact Name", "Address", ""]}
+              tableHead={["Organization", "Contact Name", "Address", "Services Offered"]}
               tableData={[
-                ["Org1", "Contact1", "Address1", ""],
-                ["Org2", "Contact2", "Address2", ""],
-                ["Org3", "Contact3", "Address3", ""],
-                ["Org4", "Contact4", "Address4", ""],
-                ["Org5", "Contact5", "Address5", ""]
+                ["Hope Central", "Administrator", "5802 Makoma Dr Ste 3, Orlando, FL 32839", "Counseling Services, Employment Training"],
+                ["New Image Youth Center", "Administrator", "214 South Parramore Ave, Orlando FL 32805", "Youth Services"],
+                ["Simeon Resource & Development Center", "Administrator", "750 S. Orange Blossom Trail, Ste 30, Orlando FL 32805", "Health Services, Employment Training, Social Programs"],
+                ["Bridges of Light Foundation", "Administrator", "4203 Vineland Rd, Orlando FL 32811", "Youth Services"],
+                ["Homeless Services Network of Central Florida", "Administrator", "4065-D L.B. McLeod Dr., Orlando FL 32811", "Social Programs, Homelessness Prevention"],
+                ["Habitat for Humanity of Greater Orlando", "Administrator", "4116 Silver Star Rd, Orlando FL 32808", "Affordable Housing, Homeowner Counseling"]             
               ]}
             />
           </CardBody>

@@ -8,7 +8,6 @@ import TableBody from "@material-ui/core/TableBody";
 import TableRow from "@material-ui/core/TableRow";
 import TableCell from "@material-ui/core/TableCell";
 import Delete from "@material-ui/icons/DeleteOutlined";
-import Edit from "@material-ui/icons/Edit";
 import Input from "./Input";
 import FormBtn from "./FormBtn";
 import Row from "./Row";
@@ -75,7 +74,7 @@ class Results extends Component {
               <TableCell>Department</TableCell>
               <TableCell>Service Type</TableCell>
               <TableCell>Total Hours</TableCell>
-              <TableCell>Edit or Delete Record</TableCell>
+              <TableCell>Delete</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -86,7 +85,6 @@ class Results extends Component {
                 <Cell>{hours.eventtype}</Cell>
                 <Cell>{hours.hourscompleted}</Cell>
                 <Cell>
-                  <Edit />
                   <Delete onClick={() => this.deleteHours(hours._id)} />
                 </Cell>
               </Row>
@@ -94,7 +92,6 @@ class Results extends Component {
             <TableRow>
               <TableCell>
                 <Input
-                  autoFocus
                   value={this.state.employee}
                   onChange={this.handleInputChange}
                   margin="dense"
