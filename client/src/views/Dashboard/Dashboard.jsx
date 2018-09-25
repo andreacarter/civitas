@@ -13,7 +13,6 @@ import ContactMail from "@material-ui/icons/ContactMail";
 // core components
 import GridItem from "components/Grid/GridItem.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
-import Table from "components/Table/Table.jsx";
 import Tasks from "components/Tasks/Tasks.jsx";
 import CustomTabs from "components/CustomTabs/CustomTabs.jsx";
 import Card from "components/Card/Card.jsx";
@@ -30,6 +29,7 @@ import {
 } from "variables/charts";
 
 import dashboardStyle from "assets/jss/material-dashboard-react/views/dashboardStyle.jsx";
+import TopEmployees from "./TopEmployees";
 
 class Dashboard extends React.Component {
   state = {
@@ -177,18 +177,7 @@ class Dashboard extends React.Component {
                 <p className={classes.cardCategoryWhite}>Updated 2 days ago</p>
               </CardHeader>
               <CardBody>
-                <Table
-                  tableHeaderColor="warning"
-                  tableHead={["Rank", "Name", "Department", "Total Hours"]}
-                  tableData={[
-                    [
-                      "bank._id",
-                      "bank.employee",
-                      "bank.department",
-                      "bank.servicehours"
-                    ]
-                  ]}
-                />
+                <TopEmployees />
               </CardBody>
             </Card>
           </GridItem>

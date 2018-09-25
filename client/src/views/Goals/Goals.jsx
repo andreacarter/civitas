@@ -8,8 +8,6 @@ import GridContainer from "components/Grid/GridContainer.jsx";
 import Card from "components/Card/Card.jsx";
 import CardHeader from "components/Card/CardHeader.jsx";
 import CardBody from "components/Card/CardBody.jsx";
-import Modal from "components/Modal/Modal.jsx";
-import CardFooter from "components/Card/CardFooter.jsx";
 import iconsStyle from "assets/jss/material-dashboard-react/views/iconsStyle.jsx";
 import CustomLinearProgress from "components/CustomLinearProgress/CustomLinearProgress.jsx";
 import ResultsTable from "./ResultsTable";
@@ -68,9 +66,6 @@ function Goals(props) {
             <CardBody>
               <ResultsTable />
             </CardBody>
-            <CardFooter>
-              <Modal />
-            </CardFooter>
           </Card>
         </GridItem>
       </GridContainer>

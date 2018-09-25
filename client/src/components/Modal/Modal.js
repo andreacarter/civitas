@@ -24,7 +24,12 @@ class Modal extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      modal: false
+      modal: false,
+      hours: [],
+      employee: "",
+      department: "",
+      eventtype: "",
+      hourscompleted: ""
     };
   }
   handleClickOpen(modal) {
@@ -37,6 +42,20 @@ class Modal extends React.Component {
     x[modal] = false;
     this.setState(x);
   }
+
+  loadData = () => {
+    console.log("hello");
+    API.getAllHours().then(res =>
+      this.setState({
+        hours: res.data,
+        employee: "",
+        department: "",
+        eventtype: "",
+        hourscompleted: ""
+      })
+    );
+  };
+
   handleInputChange = event => {
     const { name, value } = event.target;
     this.setState({
@@ -52,7 +71,9 @@ class Modal extends React.Component {
       department: this.state.department,
       eventtype: this.state.eventtype,
       hourscompleted: this.state.hourscompleted
-    }).then(res => this.loadData());
+    })
+      .then(res => this.loadData())
+      .catch(err => console.log(err));
   };
   render() {
     const { classes } = this.props;
@@ -95,55 +116,58 @@ class Modal extends React.Component {
               Submit Employee Service Hours
             </h4>
           </DialogTitle>
-          <DialogContent
-            id="modal-slide-description"
-            className={classes.modalBody}
-          >
-            <TextField
-              autoFocus
-              value={this.state.employee}
-              onChange={this.handleInputChange}
-              margin="dense"
-              name="employee"
-              label="Employee Name"
-              type="input"
-              fullWidth
-            />
-            <TextField
-              value={this.state.department}
-              onChange={this.handleInputChange}
-              margin="dense"
-              name="department"
-              label="Department"
-              type="input"
-              fullWidth
-            />
-            <TextField
-              value={this.state.eventtype}
-              onChange={this.handleInputChange}
-              margin="dense"
-              name="eventtype"
-              label="Service Completed"
-              type="input"
-              fullWidth
-            />
-            <TextField
-              value={this.state.hourscompleted}
-              onChange={this.handleInputChange}
-              margin="dense"
-              name="hourscompleted"
-              label="Service Hours"
-              type="input"
-              fullWidth
-            />
-          </DialogContent>
-          <DialogActions
-            className={classes.modalFooter + " " + classes.modalFooterCenter}
-          >
-            <Button onClick={this.handleFormSubmit} color="success">
-              Submit
-            </Button>
-          </DialogActions>
+          <form>
+            <DialogContent
+              id="modal-slide-description"
+              className={classes.modalBody}
+            >
+              <TextField
+                autoFocus
+                value={this.state.employee}
+                onChange={this.handleInputChange}
+                margin="dense"
+                name="employee"
+                label="Employee Name"
+                type="input"
+                fullWidth
+              />
+              <TextField
+                value={this.state.department}
+                onChange={this.handleInputChange}
+                margin="dense"
+                name="department"
+                label="Department"
+                type="input"
+                fullWidth
+              />
+              <TextField
+                value={this.state.eventtype}
+                onChange={this.handleInputChange}
+                margin="dense"
+                name="eventtype"
+                label="Service Completed"
+                type="input"
+                fullWidth
+              />
+              <TextField
+                value={this.state.hourscompleted}
+                onChange={this.handleInputChange}
+                margin="dense"
+                name="hourscompleted"
+                label="Service Hours"
+                type="input"
+                fullWidth
+              />
+            </DialogContent>
+
+            <DialogActions
+              className={classes.modalFooter + " " + classes.modalFooterCenter}
+            >
+              <Button onClick={this.handleFormSubmit} color="success">
+                Submit
+              </Button>
+            </DialogActions>
+          </form>
         </Dialog>
       </div>
     );

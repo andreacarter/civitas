@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from 'react-router-dom'
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 // core components
@@ -9,7 +8,7 @@ import Table from "components/Table/Table.jsx";
 import Card from "components/Card/Card.jsx";
 import CardHeader from "components/Card/CardHeader.jsx";
 import CardBody from "components/Card/CardBody.jsx";
-import OrgProfiles from "./OrgProfiles";
+
 
 const styles = {
   cardCategoryWhite: {

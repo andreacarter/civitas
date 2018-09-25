@@ -2,10 +2,10 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const hoursSchema = new Schema({
-  employee: { type: String, required: true },
-  department: { type: String, required: true },
-  eventtype: { type: String, required: true },
-  hoursCompleted: { type: Number, required: true },
+  employee: { type: String },
+  department: { type: String },
+  eventtype: { type: String },
+  hourscompleted: { type: Number },
   date: { type: Date, default: Date.now }
 });
 
