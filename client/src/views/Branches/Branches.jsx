@@ -58,7 +58,7 @@ function TypographyPage(props) {
             <CardBody>
               <div className={classes.typo}>
                 <div className={classes.note}>Branch Name</div>
-                <h5>Central Avenue</h5>
+                <h5>Downtown</h5>
               </div>
               <div className={classes.typo}>
                 <div className={classes.note}>Address</div>
@@ -66,7 +66,7 @@ function TypographyPage(props) {
               </div>
               <div className={classes.typo}>
                 <div className={classes.note}>Branch Services</div>
-                <Muted>Full Service, with ATM</Muted>
+                <Muted>Full Service, ATM</Muted>
               </div>
             </CardBody>
           </Card>
@@ -89,7 +89,7 @@ function TypographyPage(props) {
               </div>
               <div className={classes.typo}>
                 <div className={classes.note}>Branch Services</div>
-                <Muted>Full Service, with ATM</Muted>
+                <Muted>Full Service, Mortgages, ATM</Muted>
               </div>
             </CardBody>
           </Card>

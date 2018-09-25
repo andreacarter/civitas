@@ -12,7 +12,7 @@ import BankProfile from "views/BankProfile/BankProfile.jsx";
 import OrgList from "views/OrgList/OrgList.jsx";
 import Branches from "views/Branches/Branches.jsx";
 import Goals from "views/Goals/Goals.jsx";
-import Maps from "views/Maps/Maps.jsx";
+import CRAMap from "views/Maps/CRAMap.jsx";
 
 const dashboardRoutes = [
   {
@@ -55,7 +55,7 @@ const dashboardRoutes = [
     sidebarName: "Maps",
     navbarName: "Map",
     icon: MapOutlined,
-    component: Maps
+    component: CRAMap
   },
   { redirect: true, path: "/", to: "/dashboard" }
 ];

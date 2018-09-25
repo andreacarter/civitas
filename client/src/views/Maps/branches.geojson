@@ -1,0 +1,35 @@
+{
+    "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "branchname": "Downtown Orlando",
+        "address": "400 E Central Blvd, Orlando, FL 32801",
+        "services": "Full Service, Walk-Up ATM"
+         },
+      "geometry": {
+        "coordinates": [
+          -81.37261, 
+          28.54196
+        ],
+        "type": "Point"
+      }
+    },
+        {
+      "type": "Feature",
+      "properties": {
+        "branchname": "Southwest Orlando",
+        "address": "10900 Orangewood Blvd, Orlando, FL 32821", 
+        "services": "Full Service, Mortgages, Drive-Up ATM"
+         },
+      "geometry": {
+        "coordinates": [
+          -81.44685, 
+          28.4078
+        ],
+        "type": "Point"
+      }
+    }
+]
+}

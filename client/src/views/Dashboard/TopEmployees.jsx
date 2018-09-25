@@ -24,8 +24,7 @@ class Results extends Component {
   }
 
   loadData = () => {
-    API.getAllHours()
-    .then(res =>
+    API.getAllHours().then(res =>
       this.setState({
         hours: res.data
       })

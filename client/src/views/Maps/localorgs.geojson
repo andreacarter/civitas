@@ -1,0 +1,95 @@
+{
+    "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "orgname": "Hope Central",
+        "address": "5802 Makoma Dr Ste 3, Orlando, FL 32839",
+        "services": "Counseling Services, Employment Training"
+         },
+      "geometry": {
+        "coordinates": [
+          -81.395648, 
+          28.474355
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "orgname": "New Image Youth Center",
+        "address": "214 South Parramore Ave, Orlando FL 32805",
+        "services": "Youth Services"
+         },
+      "geometry": {
+        "coordinates": [
+          -81.389148, 
+          28.539538
+        ],
+        "type": "Point"
+      }
+    },
+        {
+      "type": "Feature",
+      "properties": {
+        "orgname": "Simeon Resource & Development Center",
+        "address": "750 S. Orange Blossom Trail, Ste 30, Orlando FL 32805",
+        "services": "Health Services, Employment Training, Social Programs"
+         },
+      "geometry": {
+        "coordinates": [
+          -81.397784, 
+          28.533703
+        ],
+        "type": "Point"
+      }
+    },
+        {
+      "type": "Feature",
+      "properties": {
+        "orgname": "Bridges of Light Foundation",
+        "address": "4203 Vineland Rd, Orlando FL 32811",
+        "services": "Youth Services"
+         },
+      "geometry": {
+        "coordinates": [
+          -81.429538, 
+          28.501230
+        ],
+        "type": "Point"
+      }
+    },
+        {
+      "type": "Feature",
+      "properties": {
+        "orgname": "Homeless Services Network of Central Florida",
+        "address": "4065-D L.B. McLeod Dr., Orlando FL 32811",
+        "services": "Social Programs, Homelessness Prevention"
+         },
+      "geometry": {
+        "coordinates": [
+          -81.293691, 
+          28.419590
+        ],
+        "type": "Point"
+      }
+    },
+        {
+      "type": "Feature",
+      "properties": {
+        "orgname": "Habitat for Humanity of Greater Orlando",
+        "address": "4116 Silver Star Rd, Orlando FL 32808",
+        "services": "Affordable Housing, Homeowner Counseling"
+         },
+      "geometry": {
+        "coordinates": [
+          -81.433634, 
+          28.577660
+        ],
+        "type": "Point"
+      }
+    }
+]
+}
