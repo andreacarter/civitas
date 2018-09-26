@@ -1,9 +1,9 @@
-import Dashboard from "layouts/Dashboard/Dashboard.jsx";
+import Landing from "../views/Landing/LandingPage.jsx";
 
 const indexRoutes = [
   {
     path: "/",
-    component: Dashboard
+    component: Landing
   }
 ];
 

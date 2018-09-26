@@ -12,14 +12,9 @@ var events = [
   "Sponsorship dinner with Junior Achievement - October 12",
   "Ruby's Place Gala - October 27 "
 ];
-var contact = [
-  "Message received from Wendy at ECHO Housing",
-  "Message received from Carla at Community Housing Network"
-];
 
 module.exports = {
   // these 3 are used to create the tasks lists in TasksCard - Dashboard view
   tasks,
-  events,
-  contact
+  events
 };

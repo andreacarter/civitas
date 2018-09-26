@@ -11,8 +11,8 @@ import CardHeader from "components/Card/CardHeader.jsx";
 import CardAvatar from "components/Card/CardAvatar.jsx";
 import CardBody from "components/Card/CardBody.jsx";
 import CardFooter from "components/Card/CardFooter.jsx";
-
-import avatar from "assets/img/faces/marc.jpg";
+import building from "assets/img/faces/building.jpg";
+import avatar from "assets/img/faces/profile.png";
 
 const styles = {
   cardCategoryWhite: {
@@ -38,26 +38,41 @@ function UserProfile(props) {
   return (
     <div>
       <GridContainer>
+        <GridItem xs={6} sm={6} md={6}>
+          <Card profile>
+            <CardAvatar profile>
+              <a href="#pablo" onClick={e => e.preventDefault()}>
+                <img src={building} alt="..." />
+              </a>
+            </CardAvatar>
+            <CardBody profile>
+              <h6 className={classes.cardCategory}>Community Bank</h6>
+              <h4 className={classes.cardTitle}>Orlando, FL</h4>
+              <p className={classes.description}>Large Bank - OCC</p>
+            </CardBody>
+          </Card>
+        </GridItem>
+        <GridItem xs={6} sm={6} md={6}>
+          <Card profile>
+            <CardAvatar profile>
+              <a href="#pablo" onClick={e => e.preventDefault()}>
+                <img src={avatar} alt="..." />
+              </a>
+            </CardAvatar>
+            <CardBody profile>
+              <h6 className={classes.cardCategory}>Community Bank</h6>
+              <h4 className={classes.cardTitle}>Bank Employee</h4>
+              <p className={classes.description}>CRA Officer</p>
+            </CardBody>
+          </Card>
+        </GridItem>
         <GridItem xs={12} sm={12} md={8}>
           <Card>
             <CardHeader color="primary">
-              <h4 className={classes.cardTitleWhite}>Edit Profile</h4>
-              <p className={classes.cardCategoryWhite}>Complete your profile</p>
+              <h4 className={classes.cardTitleWhite}>Edit Bank Profile</h4>
             </CardHeader>
             <CardBody>
               <GridContainer>
-                <GridItem xs={12} sm={12} md={5}>
-                  <CustomInput
-                    labelText="Company (disabled)"
-                    id="company-disabled"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                    inputProps={{
-                      disabled: true
-                    }}
-                  />
-                </GridItem>
                 <GridItem xs={12} sm={12} md={3}>
                   <CustomInput
                     labelText="Username"
@@ -130,25 +145,6 @@ function UserProfile(props) {
             <CardFooter>
               <Button color="primary">Update Profile</Button>
             </CardFooter>
-          </Card>
-        </GridItem>
-        <GridItem xs={12} sm={12} md={4}>
-          <Card profile>
-            <CardAvatar profile>
-              <a href="#pablo" onClick={e => e.preventDefault()}>
-                <img src={avatar} alt="..." />
-              </a>
-            </CardAvatar>
-            <CardBody profile>
-              <h6 className={classes.cardCategory}>CRA Officer</h6>
-              <h4 className={classes.cardTitle}>Andrea Carter</h4>
-              <p className={classes.description}>
-                Mortgage Compliance and Community Development Professional
-              </p>
-              <Button color="primary" round>
-                Follow
-              </Button>
-            </CardBody>
           </Card>
         </GridItem>
       </GridContainer>

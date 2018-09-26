@@ -6,10 +6,11 @@ import ChartistGraph from "react-chartist";
 import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
 import ArrowUpward from "@material-ui/icons/ArrowUpward";
+import ArrowDownward from "@material-ui/icons/ArrowDownward";
 import AccessTime from "@material-ui/icons/AccessTime";
 import StarTwoTone from "@material-ui/icons/StarTwoTone";
 import CalendarToday from "@material-ui/icons/CalendarToday";
-import ContactMail from "@material-ui/icons/ContactMail";
+
 // core components
 import GridItem from "components/Grid/GridItem.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
@@ -20,7 +21,7 @@ import CardHeader from "components/Card/CardHeader.jsx";
 import CardBody from "components/Card/CardBody.jsx";
 import CardFooter from "components/Card/CardFooter.jsx";
 
-import { tasks, events, contact } from "variables/general";
+import { tasks, events } from "variables/general";
 
 import {
   dailySalesChart,
@@ -64,9 +65,9 @@ class Dashboard extends React.Component {
                 </h4>
                 <p className={classes.cardCategory}>
                   <span className={classes.successText}>
-                    <ArrowUpward className={classes.upArrowCardCategory} /> 55%
+                    <ArrowUpward className={classes.upArrowCardCategory} /> 15%
                   </span>{" "}
-                  increase in loans to low and moderate income borrowers.
+                  increase in loans to low and moderate income borrowers since 2017.
                 </p>
               </CardBody>
               <CardFooter chart>
@@ -89,9 +90,12 @@ class Dashboard extends React.Component {
                 />
               </CardHeader>
               <CardBody>
-                <h4 className={classes.cardTitle}>Service Hours</h4>
+                <h4 className={classes.cardTitle}>Service Hours by Month</h4>
                 <p className={classes.cardCategory}>
-                  Community Service Hours completed by month
+                  <span className={classes.successText}>
+                    <ArrowUpward className={classes.upArrowCardCategory} /> 7%
+                  </span>{" "}
+                  increase in employee participation in community service events since 2017.
                 </p>
               </CardBody>
               <CardFooter chart>
@@ -113,9 +117,13 @@ class Dashboard extends React.Component {
                 />
               </CardHeader>
               <CardBody>
-                <h4 className={classes.cardTitle}>Commercial CRA Lending</h4>
+                <h4 className={classes.cardTitle}>CRA Lending</h4>
                 <p className={classes.cardCategory}>
-                  Commercial Community Development Loans
+                  <span className={classes.dangerText}>
+                    <ArrowDownward className={classes.downArrowCardCategory} /> 11%
+                  </span>{" "}
+                  decrease in small business and community development lending since 2017.
+                  
                 </p>
               </CardBody>
               <CardFooter chart>
@@ -151,17 +159,6 @@ class Dashboard extends React.Component {
                       checkedIndexes={[0]}
                       tasksIndexes={[0, 1]}
                       tasks={events}
-                    />
-                  )
-                },
-                {
-                  tabName: "Messages",
-                  tabIcon: ContactMail,
-                  tabContent: (
-                    <Tasks
-                      checkedIndexes={[1]}
-                      tasksIndexes={[0, 1]}
-                      tasks={contact}
                     />
                   )
                 }
