@@ -1,19 +1,19 @@
 const router = require("express").Router();
-const hoursController = require("../../controllers/eventsController");
+const eventsController = require("../../controllers/eventsController");
 
 // Matches with "/api/books"
 router.route("/")
-  .get(hoursController.findAll)
-  .post(hoursController.create);
+  .get(eventsController.findAll)
+  .post(eventsController.create);
 
   router.route("/:eventscompleted")
-  .get(hoursController.findSome);
+  .get(eventsController.findSome);
 
 // Matches with "/api/books/:id"
 router
   .route("/:id")
-  .get(hoursController.findById)
-  .put(hoursController.update)
-  .delete(hoursController.remove);
+  .get(eventsController.findById)
+  .put(eventsController.update)
+  .delete(eventsController.remove);
 
 module.exports = router;

@@ -47,7 +47,7 @@ class Results extends Component {
               <Row key={hours._id}>
                 <Cell>{hours.employee}</Cell>
                 <Cell>{hours.department}</Cell>
-                <TableCell sort={-1}>{hours.hourscompleted}</TableCell>
+                <TableCell>{hours.hourscompleted}</TableCell>
               </Row>
             ))}
           </TableBody>

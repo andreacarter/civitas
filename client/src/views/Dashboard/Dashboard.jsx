@@ -146,18 +146,18 @@ class Dashboard extends React.Component {
                   tabContent: (
                     <Tasks
                       checkedIndexes={[0, 3]}
-                      tasksIndexes={[0, 1, 2, 3]}
+                      tasksIndexes={[0, 1, 2, 3, 4]}
                       tasks={tasks}
                     />
                   )
                 },
                 {
-                  tabName: "Upcoming Events",
+                  tabName: "Scheduled Donations",
                   tabIcon: CalendarToday,
                   tabContent: (
                     <Tasks
                       checkedIndexes={[0]}
-                      tasksIndexes={[0, 1]}
+                      tasksIndexes={[0, 1, 2, 3]}
                       tasks={events}
                     />
                   )

@@ -66,85 +66,77 @@ function UserProfile(props) {
             </CardBody>
           </Card>
         </GridItem>
-        <GridItem xs={12} sm={12} md={8}>
+        <GridItem xs={12} sm={12} md={12}>
           <Card>
             <CardHeader color="primary">
-              <h4 className={classes.cardTitleWhite}>Edit Bank Profile</h4>
+              <h4 className={classes.cardTitleWhite}>Edit CRA Details</h4>
             </CardHeader>
             <CardBody>
               <GridContainer>
-                <GridItem xs={12} sm={12} md={3}>
-                  <CustomInput
-                    labelText="Username"
-                    id="username"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
+                <GridItem xs={12} sm={12} md={4}>
+                  <Card>
+                    <CardHeader color="primary">
+                      <h4 className={classes.cardTitleWhite}>
+                        Investment Goals
+                      </h4>
+                    </CardHeader>
+                    <CardBody>
+                      <p className={classes.description}>
+                        Current Goal: $2,000,000
+                      </p>
+                      <CustomInput
+                        labelText="Enter new amount"
+                        id="investment"
+                        formControlProps={{
+                          fullWidth: true
+                        }}
+                      />
+                    </CardBody>
+                  </Card>
                 </GridItem>
                 <GridItem xs={12} sm={12} md={4}>
-                  <CustomInput
-                    labelText="Email address"
-                    id="email-address"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
+                  <Card>
+                    <CardHeader color="primary">
+                      <h4 className={classes.cardTitleWhite}>Service Goals</h4>
+                    </CardHeader>
+                    <CardBody>
+                      <p className={classes.description}>
+                        Current Goal: 150 Hours
+                      </p>
+                      <CustomInput
+                        labelText="Enter new amount"
+                        id="hours"
+                        formControlProps={{
+                          fullWidth: true
+                        }}
+                      />
+                    </CardBody>
+                  </Card>
+                </GridItem>
+                <GridItem xs={12} sm={12} md={4}>
+                  <Card>
+                    <CardHeader color="primary">
+                      <h4 className={classes.cardTitleWhite}>Lending Goals</h4>
+                    </CardHeader>
+                    <CardBody>
+                      <p className={classes.description}>
+                        Current Goal: $78,000,000
+                      </p>
+                      <CustomInput
+                        labelText="Enter new amount"
+                        id="lending"
+                        formControlProps={{
+                          fullWidth: true
+                        }}
+                      />
+                    </CardBody>
+                  </Card>
                 </GridItem>
               </GridContainer>
-              <GridContainer>
-                <GridItem xs={12} sm={12} md={6}>
-                  <CustomInput
-                    labelText="First Name"
-                    id="first-name"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
-                </GridItem>
-                <GridItem xs={12} sm={12} md={6}>
-                  <CustomInput
-                    labelText="Last Name"
-                    id="last-name"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
-                </GridItem>
-              </GridContainer>
-              <GridContainer>
-                <GridItem xs={12} sm={12} md={4}>
-                  <CustomInput
-                    labelText="City"
-                    id="city"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
-                </GridItem>
-                <GridItem xs={12} sm={12} md={4}>
-                  <CustomInput
-                    labelText="Country"
-                    id="country"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
-                </GridItem>
-                <GridItem xs={12} sm={12} md={4}>
-                  <CustomInput
-                    labelText="Postal Code"
-                    id="postal-code"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
-                </GridItem>
-              </GridContainer>
+              <CardFooter>
+                <Button color="primary">Update CRA Details</Button>
+              </CardFooter>
             </CardBody>
-            <CardFooter>
-              <Button color="primary">Update Profile</Button>
-            </CardFooter>
           </Card>
         </GridItem>
       </GridContainer>
