@@ -61,9 +61,6 @@ const dailySalesChart = {
   }
 };
 
-// ##############################
-// // // Email Subscriptions
-// #############################
 
 const emailsSubscriptionChart = {
   data: {

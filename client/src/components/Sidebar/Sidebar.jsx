@@ -29,9 +29,9 @@ const Sidebar = ({ ...props }) => {
         var activePro = " ";
         var listItemClasses;
         listItemClasses = classNames({
-            [" " + classes[color]]: activeRoute(prop.path)
-          });
-        
+          [" " + classes[color]]: activeRoute(prop.path)
+        });
+
         const whiteFontClasses = classNames({
           [" " + classes.whiteFont]: activeRoute(prop.path)
         });
@@ -63,7 +63,10 @@ const Sidebar = ({ ...props }) => {
   );
   var brand = (
     <div className={classes.logo}>
-      <a href="https://github.com/mirtacarter/civitas" className={classes.logoLink}>
+      <a
+        href="https://github.com/mirtacarter/civitas"
+        className={classes.logoLink}
+      >
         <div className={classes.logoImage}>
           <img src={logo} alt="logo" className={classes.img} />
         </div>

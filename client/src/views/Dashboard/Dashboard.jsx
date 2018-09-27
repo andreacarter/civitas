@@ -171,7 +171,6 @@ class Dashboard extends React.Component {
                 <h4 className={classes.cardTitleWhite}>
                   Top Employee Volunteers
                 </h4>
-                <p className={classes.cardCategoryWhite}>Updated 2 days ago</p>
               </CardHeader>
               <CardBody>
                 <TopEmployees />

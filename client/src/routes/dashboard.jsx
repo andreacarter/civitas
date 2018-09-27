@@ -14,7 +14,6 @@ import Branches from "views/Branches/Branches.jsx";
 import Goals from "views/Goals/Goals.jsx";
 import CRAMap from "views/Maps/CRAMap.jsx";
 
-
 const dashboardRoutes = [
   {
     path: "/dashboard",
@@ -57,7 +56,7 @@ const dashboardRoutes = [
     navbarName: "Map",
     icon: MapOutlined,
     component: CRAMap
-  }, 
+  },
   { redirect: true, path: "/", to: "/dashboard" }
 ];
 

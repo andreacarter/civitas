@@ -1,3 +1,5 @@
 module.exports = {
-  Hours: require("./hours")
+  Hours: require("./hours"),
+  Tasks: require("./tasks"), 
+  Events: require("./events")
 };

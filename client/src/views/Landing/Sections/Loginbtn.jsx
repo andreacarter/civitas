@@ -6,7 +6,7 @@ class Loginbtn extends React.Component {
     return (
       <div id="loginbtn">
         <button className="btn btn-info ml-5" type="button">
-          <Link to={"/dashboard"}>
+          <Link to={"/login"}>
             <span className="text-white">Sign In</span>
           </Link>
         </button>

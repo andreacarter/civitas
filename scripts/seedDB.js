@@ -8,41 +8,36 @@ mongoose.connect(
   "mongodb://localhost/servicehours"
 );
 
-const hoursSeed = [
+const eventsSeed = [
   {
-    employee: "John Smith",
-    department: "Accounting",
-    eventtype: "Tax Preparation",
-    hourscompleted: 6,
-    date: new Date(Date.now())
+    orgname: "Junior Achievement",
+    eventtype: "Sponsorship Dinner",
+    location: "310 Lakeside Restaurant",
+    eventdate: "October 12, 2018",
+    eventtime: "7:00 PM",
+    date: { type: Date, default: Date.now }
   },
   {
-    employee: "James Bond",
-    department: "Branch Services",
-    eventtype: "Adult Financial Education",
-    hourscompleted: 9,
-    date: new Date(Date.now())
+    orgname: "Ruby's Place",
+    eventtype: "Anniversary Gala",
+    location: "Harry P. Leu Gardens",
+    eventdate: "October 27, 2018",
+    eventtime: "8:00 PM",
+    date: { type: Date, default: Date.now }
   },
   {
-    employee: "Jane Doe",
-    department: "Legal and Compliance",
-    eventtype: "Youth Financial Education",
-    hourscompleted: 4,
-    date: new Date(Date.now())
-  },
-  {
-    employee: "Jenny Williams",
-    department: "Underwriting",
-    eventtype: "Affordable Housing Loan Committee",
-    hourscompleted: 6,
-    date: new Date(Date.now())
-  },
-
+    orgname: "Habitat for Humanity",
+    eventtype: "Drive One for Habitat Golf Tournament",
+    location: "Disney Palm Golf Course",
+    eventdate: "November 3, 2018",
+    eventtime: "8:00 AM",
+    date: { type: Date, default: Date.now }
+  }
 ];
 
-db.Hours
+db.Events
   .remove({})
-  .then(() => db.Hours.collection.insertMany(hoursSeed))
+  .then(() => db.Events.collection.insertMany(eventsSeed))
   .then(data => {
     console.log(data.result.n + " records inserted!");
     process.exit(0);
