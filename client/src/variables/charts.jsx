@@ -13,21 +13,8 @@ var delays2 = 80,
 
 const dailySalesChart = {
   data: {
-    labels: [
-      "Jan",
-      "Feb",
-      "Mar",
-      "Apr",
-      "May",
-      "Jun",
-      "Jul",
-      "Aug",
-      "Sep",
-      "Oct",
-      "Nov",
-      "Dec"
-    ],
-    series: [[7, 5, 4, 6, 7, 9, 4, 8, 7, 6, 3, 7]]
+    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+    series: [[7, 5, 4, 6, 7, 9, 4, 8]]
   },
   options: {
     lineSmooth: Chartist.Interpolation.cardinal({
@@ -80,21 +67,8 @@ const dailySalesChart = {
 
 const emailsSubscriptionChart = {
   data: {
-    labels: [
-      "Jan",
-      "Feb",
-      "Mar",
-      "Apr",
-      "May",
-      "Jun",
-      "Jul",
-      "Aug",
-      "Sep",
-      "Oct",
-      "Nov",
-      "Dec"
-    ],
-    series: [[5, 4, 3, 7, 5, 4, 3, 4, 5, 6, 7, 8]]
+    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+    series: [[5, 4, 3, 7, 5, 4, 3, 4]]
   },
   options: {
     axisX: {
@@ -145,21 +119,8 @@ const emailsSubscriptionChart = {
 
 const completedTasksChart = {
   data: {
-    labels: [
-      "Jan",
-      "Feb",
-      "Mar",
-      "Apr",
-      "May",
-      "Jun",
-      "Jul",
-      "Aug",
-      "Sep",
-      "Oct",
-      "Nov",
-      "Dec"
-    ],
-    series: [[230, 750, 450, 300, 280, 240, 200, 190, 450, 300, 280, 240]]
+    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+    series: [[230, 750, 450, 300, 280, 240, 200, 190]]
   },
   options: {
     lineSmooth: Chartist.Interpolation.cardinal({

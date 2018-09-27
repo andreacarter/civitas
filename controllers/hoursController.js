@@ -9,6 +9,14 @@ module.exports = {
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
+  findSome: function(req, res) {
+    db.Hours
+      .find(req.query)
+      .sort({ hourscompleted: -1 })
+      .limit(5)
+      .then(dbModel => res.json(dbModel))
+      .catch(err => res.status(422).json(err));
+  },
   findById: function(req, res) {
     db.Hours
       .find(req.params.id)

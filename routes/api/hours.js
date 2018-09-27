@@ -6,6 +6,9 @@ router.route("/")
   .get(hoursController.findAll)
   .post(hoursController.create);
 
+  router.route("/:hourscompleted")
+  .get(hoursController.findSome);
+
 // Matches with "/api/books/:id"
 router
   .route("/:id")

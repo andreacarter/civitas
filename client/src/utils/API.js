@@ -5,6 +5,9 @@ export default {
   getAllHours: function() {
     return axios.get("/api/hours");
   },
+  showTop: function() {
+    return axios.get("/api/hours/hourscompleted");
+  },
   // Gets the book with the given id
   findById: function(id) {
     return axios.get("/api/hours" + id);

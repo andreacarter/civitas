@@ -6,7 +6,8 @@ import Features from "./Sections/Features.jsx";
 import Footer from "./Sections/Footer.jsx";
 import Header from "./Sections/Header.jsx";
 import LandingNav from "./Sections/LandingNav.jsx";
-import LoginBtn from "./Sections/Loginbtn.jsx";
+import Loginbtn from "./Sections/Loginbtn.jsx";
+
 import Signup from "./Sections/Signup.jsx";
 
 class LandingPage extends React.Component {
@@ -23,7 +24,7 @@ class LandingPage extends React.Component {
         <Signup />
         <Contact />
         <Footer />
-        <LoginBtn />
+        <Loginbtn />
       </div>
     );
   }

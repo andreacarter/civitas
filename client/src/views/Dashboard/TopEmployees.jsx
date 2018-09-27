@@ -24,7 +24,7 @@ class Results extends Component {
   }
 
   loadData = () => {
-    API.getAllHours().then(res =>
+    API.showTop().then(res =>
       this.setState({
         hours: res.data
       })
@@ -37,7 +37,7 @@ class Results extends Component {
         <Table className="table">
           <TableHead>
             <TableRow>
-              <TableCell>Employee Name</TableCell>
+              <TableCell>Employee</TableCell>
               <TableCell>Department</TableCell>
               <TableCell>Total Hours</TableCell>
             </TableRow>
@@ -47,7 +47,7 @@ class Results extends Component {
               <Row key={hours._id}>
                 <Cell>{hours.employee}</Cell>
                 <Cell>{hours.department}</Cell>
-                <Cell>{hours.hourscompleted}</Cell>
+                <TableCell sort={-1}>{hours.hourscompleted}</TableCell>
               </Row>
             ))}
           </TableBody>

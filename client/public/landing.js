@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(window).ready(function() {
   var scrollLink = $("a.js-scroll-trigger");
 
   // Smooth scrolling

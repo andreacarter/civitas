@@ -21,8 +21,8 @@ class About extends React.Component {
                 yuccie typewriter cloud bread occupy.
               </p>
             </div>
-      </div>
-      </div>
+          </div>
+        </div>
       </div>
     );
   }
