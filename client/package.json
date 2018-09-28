@@ -1,7 +1,7 @@
 {
-  "name": "material-dashboard-react",
+  "name": "Civitas Dashboard",
   "version": "1.4.1",
-  "description": "Material Dashboard React. Coded by Creative Tim",
+  "description": "Built on Material Dashboard React by Creative Tim",
   "private": false,
   "proxy": "http://localhost:3001/",
   "dependencies": {
@@ -37,15 +37,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/creativetimofficial/material-dashboard-react.git"
+    "url": "git+https://github.com/mirtacarter/civitas"
   },
   "keywords": [],
-  "author": "Creative Tim <hello@creative-tim.com> (https://www.creative-tim.com/)",
+  "author": "Andrea Carter",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/creativetimofficial/material-dashboard-react/issues"
-  },
-  "homepage": "https://creativetimofficial.github.io/material-dashboard-react/#/dashboard",
+  "homepage": "https://mirtacarter.github.io/civitas/",
   "optionalDependencies": {
     "eslint-plugin-prettier": "^2.6.2",
     "eslint-plugin-react": "^7.10.0",
