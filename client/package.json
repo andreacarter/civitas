@@ -42,7 +42,7 @@
   "keywords": [],
   "author": "Andrea Carter",
   "license": "MIT",
-  "homepage": "https://mirtacarter.github.io/civitas/",
+  "homepage": "https://civitasdashboard.herokuapp.com/",
   "optionalDependencies": {
     "eslint-plugin-prettier": "^2.6.2",
     "eslint-plugin-react": "^7.10.0",
