@@ -12,7 +12,7 @@ const Engaged = Loadable(lazy(() => import('views/pages/organizations/Engaged'))
 const Prospective = Loadable(lazy(() => import('views/pages/organizations/Prospective')));
 const Map = Loadable(lazy(() => import('views/pages/organizations/Map')));
 const Hours = Loadable(lazy(() => import('views/pages/tracking/Hours')));
-const Donations = Loadable(lazy(() => import('views/pages/tracking/Donations')));
+const Investments = Loadable(lazy(() => import('views/pages/tracking/Investments')));
 const Lending = Loadable(lazy(() => import('views/pages/tracking/Lending')));
 
 // utilities routing
@@ -78,8 +78,8 @@ const MainRoutes = {
             path: 'tracking',
             children: [
                 {
-                    path: 'donations',
-                    element: <Donations />
+                    path: 'investments',
+                    element: <Investments />
                 }
             ]
         },

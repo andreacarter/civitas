@@ -66,10 +66,10 @@ const pages = {
                     icon: icons.IconReportAnalytics
                 },
                 {
-                    id: 'donations',
-                    title: 'Community Donations',
+                    id: 'investments',
+                    title: 'Community Investments',
                     type: 'item',
-                    url: '/tracking/donations',
+                    url: '/tracking/investments',
                     icon: icons.IconFileDollar
                 },
                 {

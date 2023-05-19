@@ -71,7 +71,7 @@ const chartData = {
             data: [65, 105, 40, 25, 55, 80, 35, 20, 35, 45, 15, 75]
         },
         {
-            name: 'Donations',
+            name: 'Investments',
             data: [85, 75, 65, 100, 100, 40, 80, 35, 75, 85, 65, 100]
         },
         {

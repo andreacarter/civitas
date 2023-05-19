@@ -6,10 +6,10 @@ import MainCard from 'ui-component/cards/MainCard';
 
 // ==============================|| SAMPLE PAGE ||============================== //
 
-const Donations = () => (
-    <MainCard title="Donations">
+const Investments = () => (
+    <MainCard title="Community Investments">
         <Typography variant="body2">Placeholder Card</Typography>
     </MainCard>
 );
 
-export default Donations;
+export default Investments;

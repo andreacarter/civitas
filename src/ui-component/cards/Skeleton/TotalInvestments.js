@@ -4,7 +4,7 @@ import Skeleton from '@mui/material/Skeleton';
 
 // ==============================|| SKELETON - EARNING CARD ||============================== //
 
-const TotalDonations = () => (
+const TotalInvestments = () => (
     <Card>
         <CardContent>
             <Grid container direction="column">
@@ -29,4 +29,4 @@ const TotalDonations = () => (
     </Card>
 );
 
-export default TotalDonations;
+export default TotalInvestments;

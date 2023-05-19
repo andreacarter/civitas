@@ -6,7 +6,7 @@ import { Grid } from '@mui/material';
 // project imports
 import TotalServiceHours from './TotalServiceHours';
 import TopEmployees from './TopEmployees';
-import TotalDonations from './TotalDonations';
+import TotalInvestments from './TotalInvestments';
 import TotalLending from './TotalLending';
 import OverviewBarChart from './OverviewBarChart';
 import { gridSpacing } from 'store/constant';
@@ -27,7 +27,7 @@ const Dashboard = () => {
                         <TotalServiceHours isLoading={isLoading} />
                     </Grid>
                     <Grid item lg={4} md={6} sm={6} xs={12}>
-                        <TotalDonations isLoading={isLoading} />
+                        <TotalInvestments isLoading={isLoading} />
                     </Grid>
                     <Grid item lg={4} md={6} sm={6} xs={12}>
                         <TotalLending isLoading={isLoading} />

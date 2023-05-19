@@ -6,7 +6,7 @@ import { Avatar, Box, Grid, Typography } from '@mui/material';
 
 // project imports
 import MainCard from 'ui-component/cards/MainCard';
-import SkeletonTotalDonations from 'ui-component/cards/Skeleton/TotalDonations';
+import SkeletonTotalInvestments from 'ui-component/cards/Skeleton/TotalInvestments';
 
 // assets
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
@@ -49,13 +49,13 @@ const CardWrapper = styled(MainCard)(({ theme }) => ({
 
 // ===========================|| DASHBOARD DEFAULT - DONATIONS CARD ||=========================== //
 
-const TotalDonations = ({ isLoading }) => {
+const TotalInvestments = ({ isLoading }) => {
     const theme = useTheme();
 
     return (
         <>
             {isLoading ? (
-                <SkeletonTotalDonations />
+                <SkeletonTotalInvestments />
             ) : (
                 <CardWrapper border={false} content={false}>
                     <Box sx={{ p: 2.25 }}>
@@ -92,7 +92,7 @@ const TotalDonations = ({ isLoading }) => {
                                         color: theme.palette.success[200]
                                     }}
                                 >
-                                    Total Community Donations - Current Month
+                                    Total Community Investments - Current Month
                                 </Typography>
                             </Grid>
                         </Grid>
@@ -103,8 +103,8 @@ const TotalDonations = ({ isLoading }) => {
     );
 };
 
-TotalDonations.propTypes = {
+TotalInvestments.propTypes = {
     isLoading: PropTypes.bool
 };
 
-export default TotalDonations;
+export default TotalInvestments;
