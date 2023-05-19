@@ -1,6 +1,6 @@
 ## Civitas - Next Generation CRA Compliance Management
 
-Civitas is a compliance management tool designed for banks to track their Community Reinvestment Act Initiatives. 
+[Civitas](https://civitas-eight.vercel.app/) is a compliance management tool designed for banks to track their Community Reinvestment Act Initiatives. 
 
 ## Background 
 
@@ -27,11 +27,16 @@ View map of CRA organizations and activities to ensure they fall within the CRA 
  - CRA Manager Utilities
 Manage CRA goals to track against and service events for employee signup and communication
 
+![Screenshot of main dashboard](https://mirtacarter.com/assets/images/civitas-screenshot.png)
+
 ## Tech Stack
 
 Adapted from Berry by CodedThemes (https://github.com/codedthemes/berry-free-react-admin-template)
 -   [Material UI V5](https://material-ui.com/)
 -   React Hooks API 
--   Redux & React Context API for State Management
--   React Router for Navigation Routing
+-   Redux & React Context API
+-   React Router
+-   ApexCharts
+
+
 
